@@ -1,0 +1,242 @@
+body{
+	background-image: url('backgr.jpg');
+}
+div.top_header{
+	display:flex;
+	height:30vh;
+	justify-content:space-around;
+	align-items:center;
+	border-bottom: 1px solid #C3C7C8;
+	background-color:#F2F7F1;
+}
+h1.shop_name{
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-weight:400;
+	font-size:50;
+}
+div.top_header img{
+	display:flex;
+	padding:0px 70px 0px 10px;
+}
+div.top_header h1{
+	display:inline-block;
+}
+div.top_header nav{
+	display:inline-block;
+}
+div.top_header nav.log_sign ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+div.top_header nav.log_sign ul  li {
+  float: left;
+}
+div.top_header nav.log_sign ul  li a.lsr{
+  display: block;
+  color:#4CC3D1;
+  text-align: center;
+  padding:0px 10px 0px;
+  text-decoration: none;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight:400;
+  border-right: 1px solid #C3C7C8;
+}
+div.top_header nav.log_sign ul  li a.lsr2{
+  display: block;
+  color:#4CC3D1;
+  text-align: center;
+  padding:0px 10px 10px;
+  text-decoration: none;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-weight:400;
+}
+div.top_header nav.log_sign ul  li a:hover {
+  color:red;
+}
+header.next{
+	margin:0;
+	padding:0;
+	font-family:Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-weight:400;
+	position:relative;
+	top:0;
+	background-color:#B3E5F0;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	border-bottom: 1px solid #C3C7C8;
+}
+header.next nav ul{
+	display:flex;
+	list-style-type:none;
+	overflow:hidden;
+	position:relative;
+}
+header.next nav ul li a{
+	height:50px;
+	line-height:50px;
+	padding:0 30px;
+	color:074C5D;
+	text-decoration:none;
+	font-size:26px;
+	display:block;
+}
+header.next nav ul  li a:hover {
+  color:red;
+}
+header.next div.toggle-menu{
+	color:074C5D;;
+	line-height:50px;
+	font-size:26px;
+	cursor:pointer;
+	display:none;
+}
+@media (max-width:991px)
+{
+	header.next div.toggle-menu{
+		display:block;
+	}
+	header.next nav.cat{
+		position:absolute;
+		width:100%;
+		height:calc(100vh-50px);
+		background:#B3E5F0;
+		top:30px;
+		left:-105%;
+		transition:0.5s;
+	}
+	header.next nav.active{
+		left:0;
+	}
+	header.next nav ul{
+		display:block;
+		text-align:center;
+	}
+	header.next nav ul li a{
+		border-bottom:1px solid #5F8C97;
+	}
+}
+.mySlides {
+	display: none;
+}
+.slideshow-container {
+  max-width: 1980px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ABE5DC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #63ECE8 ;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.flips{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	background-image:url('bck2.jpg');
+}
+.page-link{
+	text-decoration:none;
+	justify-content:space-around;
+	align-items:center;
+	text-align:center;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-weight:400;
+	font-size:24px;
+	color:#D3DAD3;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  background-color: #ffb3b3  ;
+  color: #D3DAD3;
+  transform: rotateY(180deg);
+}
+footer{
+	background-image:url('back3.jpg');
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.foot-logo{
+	justify-content:space-around;
+	align-items:center;
+}
+h3{
+	float:right;
+	display:flex;
+	text-transform:uppercase;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-weight:400;
+}
+footer article.link-list ul{
+	display:flex;
+	list-style-type:none;
+	text-transform:uppercase;
+	margin:0;
+}
+footer article.link-list ul li {
+	display:flex;
+	float: left;
+}
+footer article.link-list ul li a{
+	display: block;
+	padding: 8px;
+	color: black;
+}
+footer article.link-list ul li a::after{
+	content:"|";
+	padding:0.75em;
+}
+.copyr{
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-weight:400;
+	text-align:center;
+}
