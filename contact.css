@@ -1,0 +1,164 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-image: url('backgr.jpg');
+}
+header{
+	display:flex;
+	border-bottom: 1px solid #C3C7C8;
+	background-image:url('back4.jpg');
+	width:1335px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .s-1 {width: 8.33%;}
+  .s-2 {width: 16.66%;}
+  .s-3 {width: 25%;}
+  .s-4 {width: 33.33%;}
+  .s-5 {width: 41.66%;}
+  .s-6 {width: 50%;}
+  .s-7 {width: 58.33%;}
+  .s-8 {width: 66.66%;}
+  .s-9 {width: 75%;}
+  .s-10 {width: 83.33%;}
+  .s-11 {width: 91.66%;}
+  .s-12 {width: 100%;}
+  .top-logo img{
+	  height:100px;
+	  width:100px;
+  }
+  header h1{
+	padding:0px 150px 0px;
+	text-align:center;
+	display:flex;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-weight:400;
+	font-size:25;
+	float:left;
+  }
+  .header-img {
+		margin-top:5px;
+	}
+  .header-img img{
+		width:100%;
+	}	
+	.info-contain{
+		margin-top:5px;
+		background-color:white;
+}
+	.info-contain article{
+		font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+		font-weight:400;
+		font-size:18px;
+		padding:20px;
+		display:block;
+	}
+	.info{
+		color:#9271BE;
+		padding:5px;	
+		text-align:center;
+		font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+		font-size:40px;
+	}
+	.info img{
+		width:25px;
+		height:25px;
+	}
+	.end{
+		position:relative;
+		display:flex;
+		margin-top:5px;
+		background-image:url('back3.jpg');
+		justify-content:space-around;
+		align-items:center;
+	}
+	.end article.link-list ul{
+		list-style-type:none;
+		text-transform:uppercase;
+		margin:0;
+}
+	.end article.link-list ul li {
+		display:inline-block;
+		float: left;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .s1 {width: 8.33%;}
+  .s2 {width: 16.66%;}
+  .s3 {width: 25%;}
+  .s4 {width: 33.33%;}
+  .s5 {width: 41.66%;}
+  .s6 {width: 50%;}
+  .s7 {width: 58.33%;}
+  .s8 {width: 66.66%;}
+  .s9 {width: 75%;}
+  .s10 {width: 83.33%;}
+  .s11 {width: 91.66%;}
+  .s12 {width: 100%;}
+  header h1{
+		padding:0px 300px 0px;
+		text-align:center;
+		display:flex;
+		font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+		font-weight:400;
+		font-size:50;
+		float:left;
+	}
+	.header-img{
+		padding:10px 0px 0px;
+		width:1335px;
+	}
+	.info-contain{
+		margin-top:5px;
+		display:flex;
+		float:left;
+		background-color:white;
+		font-size:50;
+	}
+	.info{
+		color:#9271BE;
+		padding:60px;	
+		text-align:center;
+		font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+		
+	}
+	.info img{
+		width:50px;
+		height:50px;
+	}
+	
+}
+.end{
+	margin-top:5px;
+	background-image:url('back3.jpg');
+	justify-content:space-around;
+	align-items:center;
+}
+.foot-logo{
+	display:inline-block;
+	float:left;
+	justify-content:space-around;
+	align-items:center;
+}
+h3{
+	float:right;
+	display:flex;
+	text-transform:uppercase;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-weight:400;
+}
+.link-list{
+	margin-left;30px;
+}
+.divi::after{
+	content:"|";
+	padding:0.75em;
+}
